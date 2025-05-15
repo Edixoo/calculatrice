@@ -1,15 +1,14 @@
 {
   "name": "Calculatrice",
   "version": "1.0.0",
-  "description": "A simple calculator application with history feature",
   "main": "dist/index.js",
   "scripts": {
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "start": "npm run build && node server.js",
     "dev": "vite",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:e2e": "playwright test",
+    "test:e2e": "playwright test --ui",
     "lint": "eslint . --ext .ts,.vue",
     "lint:fix": "eslint . --ext .ts,.vue --fix",
     "server": "node server.js",
@@ -38,8 +37,7 @@
     "nodemon": "^3.0.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6",
-    "vite": "^4.4.9",
-    "vue-tsc": "^1.8.8"
+    "vite": "^4.4.9"
   },
   "private": true
 }

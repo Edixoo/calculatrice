@@ -1,5 +1,4 @@
 import { CalculatorService } from './CalculatorService';
-import { Operation } from '../models/Calculator';
 
 describe('CalculatorService', () => {
   let calculatorService: CalculatorService;
